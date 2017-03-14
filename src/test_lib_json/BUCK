@@ -1,0 +1,13 @@
+cxx_binary(
+  name = 'test_lib_json',
+  header_namespace = '',
+  headers = subdir_glob([
+    ('', '*.h'),
+  ]),
+  srcs = glob([
+    '*.cpp',
+  ]),
+  deps = [
+    '//:jsoncpp',
+  ],
+)
